@@ -1,0 +1,128 @@
+// Override default variables before the import
+
+.header {
+    max-width: 100%;
+    padding-bottom: 3%;
+}
+
+h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li {
+    font-family: monospace, sans-serif;
+}
+
+.heading-three {
+    font-weight: 600;
+}
+
+.heading-title {
+    font-weight: 700;
+}
+
+.form-label {
+    padding-left: 2%;
+}
+
+.form-control {
+    max-width: 75%;
+}
+
+.icon {
+    width: 44px;
+    height: 44px;
+}
+
+.weather {
+    color: black;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.weather-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+
+.weather-icon {
+    width: 75px;
+}
+
+.temperature {
+    font-weight: 600;
+    font-size: 70px;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 10px 0;
+}
+
+.details {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 2%;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.funnyMsg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.score {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    padding-top: 3%;
+}
+
+.btn-primary, .btn-secondary {
+    margin: 2%;
+}
+
+footer {
+    background-color: #151e3f;
+    color: white;
+    height: 75px;
+    margin-top: 3%;
+    padding-top: 2%;
+
+}
+
+footer a {
+    color: #e1ad21;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
