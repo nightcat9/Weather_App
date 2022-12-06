@@ -1,6 +1,6 @@
 import './custom.scss';
 import GuessingGame from './components/guessing-game';
-import { Component, useState } from 'react';
+import { Component } from 'react';
 import ResultsPage from './components/results-page';
 import HighScoresPage from './components/high-scores';
 
@@ -51,6 +51,7 @@ class App extends Component {
         <HighScoresPage
           currentPage={this.state.currentPage}
           navigate={this._navigate}
+          weatherResponse={this.state.weatherResponse}
         />
       </div>
     );

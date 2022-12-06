@@ -219,9 +219,9 @@ class GuessingGame extends Component {
               <Search onSearchChange={this.handleOnSearchChange}></Search>
             </Row>
             <Row>
-              <p>
+              <span>
                 Enter your guess below and click submit!
-              </p>
+              </span>
             </Row>
             <Row>
               <Col><img src={thermometer} alt="Thermometer" /></Col>

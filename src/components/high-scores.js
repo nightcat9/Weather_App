@@ -29,6 +29,9 @@ class HighScoresPage extends Component {
         if (this.props.currentPage !== "High Scores Page") {
             return null;
         }
+        if (this.props.weatherResponse != null) {
+            this.state.weatherResponse = this.props.weatherResponse;
+        }
         let highScoresString = localStorage.getItem('highScores');
         let highScores = JSON.parse(highScoresString) ?? [];
         const displayScores = highScores.map((highScore) =>
