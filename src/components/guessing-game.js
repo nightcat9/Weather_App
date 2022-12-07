@@ -225,7 +225,7 @@ class GuessingGame extends Component {
               </span>
             </Row>
             <Row>
-              <Col><img src={shocker} alt="Lightning Bolt" /></Col>
+              <Col><img src={shocker} className="shocker" alt="Lightning Bolt" /></Col>
               <Col>
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
