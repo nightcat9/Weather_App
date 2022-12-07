@@ -10,7 +10,7 @@ class RulesPage extends Component {
                 <span>Play the game to see if you're smarter than a meteorologist!</span>
                 <h3 className='heading-three'>Rules</h3>
                 <ul>
-                    <li>Pick a city from the search bar.</li>
+                    <li>Enter in a city in search bar.</li>
                     <li>Fill out the form with your guesses of the current weather.</li>
                     <li>Click Submit when you're finished.</li>
                 </ul>
