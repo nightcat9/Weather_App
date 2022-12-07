@@ -229,32 +229,32 @@ class GuessingGame extends Component {
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
                     <img src={temp} alt="thermometer" className="icon" />
-                    <Form.Label>Temperature</Form.Label>
+                    <Form.Label>Temperature (°F)</Form.Label>
                     <Form.Control type="number" value={this.state.temperature} onChange={this.changeTemp} placeholder="52°F" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formFeelsLike">
                     <img src={feelslike} alt="Thermometer and sun" className="icon" />
-                    <Form.Label>Feels Like</Form.Label>
+                    <Form.Label>Feels Like (°F)</Form.Label>
                     <Form.Control type="number" value={this.state.feelsLike} onChange={this.changeFeelsLike} placeholder="50°F" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formWind">
                     <img src={wind} alt="wind" className="icon" />
-                    <Form.Label>Wind</Form.Label>
+                    <Form.Label>Wind (mph)</Form.Label>
                     <Form.Control type="number" value={this.state.wind} onChange={this.changeWind} placeholder="10 mph" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formHumidity">
                     <img src={humidity} alt="humidity" className="icon" />
-                    <Form.Label>Humidity</Form.Label>
+                    <Form.Label>Humidity (%)</Form.Label>
                     <Form.Control type="number" value={this.state.humidity} onChange={this.changeHumidity} placeholder="68%" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formVisibility">
                     <img src={visibility} alt="fog" className="icon" />
-                    <Form.Label>Visibility</Form.Label>
+                    <Form.Label>Visibility (mi)</Form.Label>
                     <Form.Control type="number" value={this.state.visibility} onChange={this.changeVisibility} placeholder="9 mi" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formPressure">
                     <img src={davidBowie} alt="David Bowie icon" className="icon" />
-                    <Form.Label>Pressure</Form.Label>
+                    <Form.Label>Pressure (in)</Form.Label>
                     <Form.Control type="number" value={this.state.pressure} onChange={this.changePressure} placeholder="30 in" />
                   </Form.Group>
                   <Button onClick={this.calculateResults} variant="success" type="submit" disabled={!this.state.weatherResponse}>
