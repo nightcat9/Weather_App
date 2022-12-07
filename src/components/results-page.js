@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
+import { Container, Row, Col, Button, Table } from 'react-bootstrap';
 import CurrentWeather from "./search/current-weather/current-weather";
 import davidBowie from '../images/davidBowie.png';
 import temp from '../images/temp2.png';
@@ -90,7 +90,7 @@ class ResultsPage extends Component {
                             Play Again!
                         </Button>
                         <Button onClick={this._navigateToHighScores} variant="primary" type="submit">
-                            View High Scores
+                            High Scores
                         </Button>
                     </Col>
                     <Col>

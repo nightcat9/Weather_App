@@ -40,24 +40,28 @@ class HighScoresPage extends Component {
         return <div>
             <HeaderImage />
             <Container>
-                <Row>
-                    <h1 className="heading-title">High Scores</h1>
-                </Row>
-                <Card style={{ width: '30rem' }}>
-                    <Card.Body className="text-right">
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Score</th>
-                                    <th>City</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {displayScores}
-                            </tbody>
-                        </Table>
-                    </Card.Body>
-                </Card>
+                <h1 className="heading-title">High Scores</h1>
+                <div className="flashes">
+                    <div className="rain">
+                        <div className="results-card">
+                            <Card style={{ width: '30rem' }}>
+                                <Card.Body className="text-right">
+                                    <Table>
+                                        <thead>
+                                            <tr>
+                                                <th>Score</th>
+                                                <th>City</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {displayScores}
+                                        </tbody>
+                                    </Table>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </div>
+                </div>
                 <Button onClick={this._navigateToGuess} variant="success" type="submit">
                     Play Again!
                 </Button>
