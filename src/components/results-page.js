@@ -78,10 +78,10 @@ class ResultsPage extends Component {
                 <Row>
                     <Col>
                         {this.state.weatherResponse && <CurrentWeather data={this.state.weatherResponse} />}
+                        <div className="funnyMsg">{funnyMsg}</div>
                     </Col>
                     <Col>
                         <div className="score">Your Score: {this.state.score}</div>
-                        <div className="funnyMsg">{funnyMsg}</div>
                     </Col>
                 </Row>
                 <Row>
