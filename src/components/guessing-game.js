@@ -7,6 +7,7 @@ import feelslike from '../images/feel.png';
 import wind from '../images/wind.png';
 import humidity from '../images/humidity.png';
 import visibility from '../images/visibility.png';
+import shocker from '../images/shocker.jpg';
 import Search from "./search/search";
 import { WEATHER_API_URL, WEATHER_API_KEY } from '../api';
 import RulesPage from "./rules";
@@ -224,7 +225,7 @@ class GuessingGame extends Component {
               </span>
             </Row>
             <Row>
-              <Col><img src={thermometer} alt="Thermometer" /></Col>
+              <Col><img src={shocker} alt="Lightning Bolt" /></Col>
               <Col>
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
