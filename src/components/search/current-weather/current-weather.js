@@ -24,7 +24,7 @@ const CurrentWeather = ({ data }) => {
                                 <Col>
                                     <div className="details">
                                         <div className="parameter-row">
-                                            <span className="parameter-label">Details</span>
+                                            <h6 className="parameter-label">Details</h6>
                                         </div>
                                         <div className="parameter-row">
                                             <span className="parameter-label">Feels like: </span>
