@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Form, Button, Tab, Tabs } from 'react-bootstrap';
-import thermometer from '../images/thermometer.png';
 import davidBowie from '../images/davidBowie.png';
 import temp from '../images/temp2.png';
 import feelslike from '../images/feel.png';
