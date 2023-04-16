@@ -50,7 +50,15 @@ class GuessingGame extends Component {
       wind: this.state.wind,
       humidity: this.state.humidity,
       visibility: this.state.visibility,
-      pressure: this.state.pressure
+      pressure: this.state.pressure,
+
+      // user scores
+      tempScore: 0,
+      feelsLikeScore: 0,
+      windScore: 0,
+      humidityScore: 0,
+      visibilityScore: 0,
+      pressureScore: 0
     }
 
     let score = 0;
@@ -59,72 +67,90 @@ class GuessingGame extends Component {
     let tempDifference = Math.abs(this.state.actualTemp - this.state.temperature);
     if (tempDifference === 0) {
       score += 25;
+      userGuesses.tempScore = 25;
     }
     if (tempDifference > 0 && tempDifference < 6) {
       score += 15;
+      userGuesses.tempScore = 15;
     }
     if (tempDifference > 5 && tempDifference < 16) {
       score += 5;
+      userGuesses.tempScore = 5;
     }
 
     //feels like
     let feelsLikeDifference = Math.abs(this.state.actualFeelsLike - this.state.feelsLike);
     if (feelsLikeDifference === 0) {
       score += 25;
+      userGuesses.feelsLikeScore = 25;
     }
     if (feelsLikeDifference > 0 && feelsLikeDifference < 6) {
       score += 15;
+      userGuesses.feelsLikeScore = 15;
     }
     if (feelsLikeDifference > 5 && feelsLikeDifference < 16) {
       score += 5;
+      userGuesses.feelsLikeScore = 5;
     }
 
     //wind
     let windDifference = Math.abs(this.state.actualWind - this.state.wind);
     if (windDifference === 0) {
       score += 25;
+      userGuesses.windScore = 25;
     }
     if (windDifference > 0 && windDifference < 6) {
       score += 15;
+      userGuesses.windScore = 15;
     }
     if (windDifference > 5 && windDifference < 16) {
       score += 5;
+      userGuesses.windScore = 5;
     }
 
     //humidity
     let humidityDifference = Math.abs(this.state.actualHumidity - this.state.humidity);
     if (humidityDifference === 0) {
       score += 25;
+      userGuesses.humidityScore = 25;
     }
     if (humidityDifference > 0 && humidityDifference < 6) {
       score += 15;
+      userGuesses.humidityScore = 15;
     }
     if (humidityDifference > 5 && humidityDifference < 16) {
       score += 5;
+      userGuesses.humidityScore = 5;
     }
 
     //visibility
     let visibilityDifference = Math.abs(this.state.actualVisibility - this.state.visibility);
     if (visibilityDifference === 0) {
       score += 25;
+      userGuesses.visibilityScore = 25;
     }
     if (visibilityDifference > 0 && visibilityDifference < 6) {
       score += 15;
+      userGuesses.visibilityScore = 15;
     }
     if (visibilityDifference > 5 && visibilityDifference < 16) {
       score += 5;
+      userGuesses.visibilityScore = 5;
     }
 
     //pressure
     let pressureDifference = Math.abs(this.state.actualPressure - this.state.pressure);
     if (pressureDifference === 0) {
       score += 25;
+      userGuesses.pressureScore = 25;
     }
     if (pressureDifference > 0 && pressureDifference < 6) {
       score += 15;
+      userGuesses.pressureScore = 15;
     }
     if (pressureDifference > 5 && pressureDifference < 16) {
       score += 5;
+      userGuesses.pressureScore = 5;
     }
 
     this.state.score = score;
@@ -257,7 +283,7 @@ class GuessingGame extends Component {
                     <Form.Label>Pressure (in)</Form.Label>
                     <Form.Control type="number" value={this.state.pressure} onChange={this.changePressure} placeholder="30 in" />
                   </Form.Group>
-                  <Button onClick={this.calculateResults} variant="success" type="submit" disabled={!this.state.weatherResponse}>
+                  <Button onClick={this.calculateResults} variant="success" type="submit" disabled={!this.state.weatherResponse} className="button">
                     Submit
                   </Button>
                 </Form>

@@ -1,12 +1,36 @@
 // Override default variables before the import
 
+@font-face {
+    font-family: mrsKate;
+    src: url(./fonts/Mrskate.ttf);
+}
+
+@font-face {
+    font-family: angelaHandwriting;
+    src: url(./fonts/AngelasHandwriting.ttf);
+}
+
+@font-face {
+    font-family: bigNoodle;
+    src: url(./fonts/BigNoodle.ttf);
+}
+
 .header {
     max-width: 100%;
     padding-bottom: 3%;
 }
 
-h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
-    font-family: monospace, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: bigNoodle;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+td, p, .form-label, .nav-link, li, span, .button {
+    font-family: mrsKate;
+    font-size: 22px;
 }
 
 .heading-three {
@@ -14,7 +38,8 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 }
 
 .heading-title {
-    font-weight: 700;
+    font-weight: bolder;
+    font-size: 3rem;
 }
 
 .form-label {
@@ -46,7 +71,7 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 
 .city {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1;
     margin: 0;
     letter-spacing: 1px;
@@ -54,7 +79,7 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 
 .weather-description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1;
     margin: 0;
 }
@@ -65,9 +90,8 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 
 .temperature {
     font-weight: 600;
-    font-size: 70px;
+    font-size: 50px;
     width: auto;
-    letter-spacing: -5px;
     margin: 10px 0;
 }
 
@@ -84,19 +108,25 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 .parameter-label {
     text-align: left;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 22px;
     padding-right: 2%;
 }
 
 .parameter-value {
     text-align: right;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 22px;
 }
 
 .funnyMsg {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: mrsKate;
     font-size: 1.5rem;
+}
+
+.categoryScore {
+    color: green;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .rules {
@@ -106,44 +136,23 @@ h1, h2, h3, h4, h5, h6, td, p, .form-label, .nav-link, li, span {
 }
 
 .score {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-family: mrsKate;
+    font-size: 2rem;
     padding-top: 3%;
+    text-transform: uppercase;
 }
+
+.scoreColor {
+    color: green;
+}
+
 
 .flashes {
     margin: 0;
     padding: 0;
-    background: url(images/flashes.jpg);
+    background: url(images/fantasy.gif);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.rain {
-    height: 100vh;
-    background: url(images/rain1.png);
-    animation: rain .5s linear infinite;
-}
-
-.rain::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    animation: lighting .5s linear infinite;
-    opacity: 0;
-}
-
-@keyframes rain {
-    0%
-    {
-        background-position: 0% 0%;
-    }
-    100%
-    {
-        background-position: 20% 100%;
-    }
 }
 
 .results-card {
@@ -179,4 +188,5 @@ footer a:hover {
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
 

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import weatherHeader from '../images/weatherHeader.jpg';
+import weatherHeader from '../images/new-header.png';
 
 
 class HeaderImage extends Component {
