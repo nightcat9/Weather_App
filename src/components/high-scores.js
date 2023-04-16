@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Button, Table, Card } from 'react-bootstrap';
+import { Container, Button, Table, Card } from 'react-bootstrap';
 import HeaderImage from "./header";
 import Footer from "./footer";
 
