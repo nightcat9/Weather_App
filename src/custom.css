@@ -148,6 +148,7 @@ td, p, .form-label, .nav-link, li, span, .button {
   background: url(images/fantasy.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 1000px;
 }
 
 .results-card {
