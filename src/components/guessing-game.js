@@ -239,19 +239,21 @@ class GuessingGame extends Component {
         >
           <Tab eventKey="game" title="Game">
             <Row>
-              <h1 className="heading-title">Make Your Guess!</h1>
+              <h1 className="heading-title">Let's Play!</h1>
             </Row>
             <Row>
+              <h2>Search for a City Below</h2>
               <Search onSearchChange={this.handleOnSearchChange}></Search>
             </Row>
             <Row>
-              <span>
-                Enter your guess below and click submit!
-              </span>
+              
             </Row>
             <Row>
               <Col><img src={shocker} className="shocker" alt="Lightning Bolt" /></Col>
               <Col>
+              <span>
+                Enter your guess below and click submit!
+              </span>
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
                     <img src={temp} alt="thermometer" className="icon" />
