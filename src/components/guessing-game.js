@@ -246,14 +246,11 @@ class GuessingGame extends Component {
               <Search onSearchChange={this.handleOnSearchChange}></Search>
             </Row>
             <Row>
-              
-            </Row>
-            <Row>
               <Col><img src={shocker} className="shocker" alt="Lightning Bolt" /></Col>
               <Col>
-              <span>
-                Enter your guess below and click submit!
-              </span>
+              <h3>
+                Make your predictions below and click submit!
+              </h3>
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
                     <img src={temp} alt="thermometer" className="icon" />
