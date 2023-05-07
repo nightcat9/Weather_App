@@ -192,6 +192,13 @@ footer a:hover {
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+    .flashes {
+      background-image: none;
+      min-height: 800px;
+    }
+  }
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
