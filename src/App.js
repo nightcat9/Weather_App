@@ -52,6 +52,8 @@ class App extends Component {
           currentPage={this.state.currentPage}
           navigate={this._navigate}
           weatherResponse={this.state.weatherResponse}
+          score={this.state.score}
+          userGuesses={this.state.userGuesses}
         />
       </div>
     );

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { 
-    Container, 
-    Row, 
-    Col, 
-    Button, 
+import {
+    Container,
+    Row,
+    Col,
+    Button,
     Table
 } from 'react-bootstrap';
 
@@ -87,19 +87,14 @@ class ResultsPage extends Component {
                         {this.state.weatherResponse && <CurrentWeather data={this.state.weatherResponse} />}
                     </Col>
                     <Col md={12} lg={6}>
-                        <h2>Your Score: </h2><div className="score">{this.state.score}</div>
+                        <h2>Your Score: </h2>
+                        <h2>{this.state.score}</h2>
                         <div className="funnyMsg">{funnyMsg}</div>
-                        <Button onClick={this._navigateToGuess} variant="success" type="submit" className="game-button">
-                            Play Again!
-                        </Button>
-                        <Button onClick={this._navigateToHighScores} variant="primary" type="submit" className="game-button">
-                            High Scores
-                        </Button>
                     </Col>
                 </Row>
                 <br />
                 <Row>
-                    <Col md={{ span:6 }} lg={3}>
+                    <Col md={{ span: 6 }} lg={3}>
                         <h2>Scoring</h2>
                         <Table>
                             <tbody>
@@ -114,20 +109,26 @@ class ResultsPage extends Component {
                                 <tr>
                                     <td><h5>Within: 6 - 15</h5></td>
                                     <td className="scoreColor">+ 5</td>
-                                </tr>      
+                                </tr>
                             </tbody>
                         </Table>
+                        <Button onClick={this._navigateToGuess} variant="success" type="submit" className="game-button">
+                            Play Again!
+                        </Button>
+                        <Button onClick={this._navigateToHighScores} variant="primary" type="submit" className="game-button">
+                            High Scores
+                        </Button>
                     </Col>
-                    
+
                     <Col md={12} lg={{ span: 6, offset: 3 }}>
                         <Table>
                             <thead>
                                 <tr>
+                                    <td></td>
+                                    <td></td>
                                     <td>
                                         <h4>You Guessed</h4>
                                     </td>
-                                    <td></td>
-                                    <td></td>
                                     <td>
                                         <h4>You Scored</h4>
                                     </td>
