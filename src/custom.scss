@@ -42,6 +42,10 @@ td, p, .form-label, .nav-link, li, span, .button {
     font-size: 3rem;
 }
 
+.bottom-section-game{
+    padding-top: 4%;
+}
+
 .form-label {
     padding-left: 2%;
 }
@@ -51,7 +55,7 @@ td, p, .form-label, .nav-link, li, span, .button {
 }
 
 .shocker {
-    padding-top: 2%;
+    max-width: 100%;
 }
 
 .icon {
@@ -144,6 +148,7 @@ td, p, .form-label, .nav-link, li, span, .button {
 
 .scoreColor {
     color: green;
+    font-weight: 600;
 }
 
 
