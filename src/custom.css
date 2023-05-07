@@ -38,6 +38,10 @@ td, p, .form-label, .nav-link, li, span, .button {
   font-size: 3rem;
 }
 
+.bottom-section-game {
+  padding-top: 2%;
+}
+
 .form-label {
   padding-left: 2%;
 }

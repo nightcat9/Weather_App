@@ -245,11 +245,11 @@ class GuessingGame extends Component {
               <h2>Search for a City Below</h2>
               <Search onSearchChange={this.handleOnSearchChange}></Search>
             </Row>
-            <Row>
+            <Row className="bottom-section-game">
               <Col><img src={shocker} className="shocker" alt="Lightning Bolt" /></Col>
               <Col>
               <h3>
-                Make your predictions below and click submit!
+                Make your predictions below and click submit
               </h3>
                 <Form>
                   <Form.Group className="mb-3" controlId="formTemp">
