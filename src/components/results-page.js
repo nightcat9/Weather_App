@@ -123,11 +123,11 @@ class ResultsPage extends Component {
                         <Table>
                             <thead>
                                 <tr>
+                                    <td></td>
+                                    <td></td>
                                     <td>
                                         <h4>You Guessed</h4>
                                     </td>
-                                    <td></td>
-                                    <td></td>
                                     <td>
                                         <h4>You Scored</h4>
                                     </td>
